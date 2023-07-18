@@ -1,0 +1,41 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "first_name": "Sardor",
+  "last_name": "Yuldashev",
+  "username": "sardor",
+  "password": "1234"
+}
+
+
+###
+GET http://localhost:3000/users
+
+
+###
+GET http://localhost:3000/users/:id
+
+
+###
+PATCH http://localhost:3000/users/:id
+Content-Type: application/json
+
+{
+  "first_name": "Orzu",
+  "last_name": "Mirzayev",
+  "username": "orzu"
+}
+
+
+###
+PUT http://localhost:3000/users/:id
+Content-Type: application/json
+
+{
+  "password": "123456"
+}
+
+
+###
+DELETE http://localhost:3000/users/:id
